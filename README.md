@@ -1,156 +1,160 @@
-# HOUSE OF CAKES
-### An Immersive, Animated, Tropical Patisserie & Cake Exhibition
+<div align="center">
 
-> *"A little slice of extraordinary."*
+  <!-- ANIMATED HERO IMAGE -->
+  <img src="https://imgs.search.brave.com/JG1Ycvx4_YiS1P2n9koT012wOFoP_sKstSjdNWpAtug/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTQuZ2lwaHkuY29t/L21lZGlhL3YxLlky/bGtQVGM1TUdJM05q/RXhiV2QxZW5ab016/RnNaVzE0YW5VeGVX/cGlPR2t5YlRZek5U/VnFhM1J1Tm1SNGVE/VnRhWEozYkNabGNE/MTJNVjluYVdaelgz/TmxZWEpqYUNaamRE/MW4va2ZNR0QzS3dk/SXJwbS8yMDAuZ2lm.gif" alt="House of Cakes Animated Banner" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); margin-bottom: 40px; width: 100%; max-height: 400px; object-fit: cover;">
 
-HOUSE OF CAKES is an award-winning digital experience crafted for a luxury cake atelier. It blends vibrant tropical café energy (passion fruit, wild berries, mango, hibiscus) with haute French patisserie discipline and an interactive, Japanese-inspired sushi-conveyor-style cake exhibition driven by vertical scrolling.
+  <h1 align="center" style="font-size: 3em; margin-bottom: 0;">✦ HOUSE OF CAKES ✦</h1>
+  <p align="center" style="font-size: 1.2em; color: #555; font-style: italic; margin-top: 10px;">
+    An Immersive, Animated, Tropical Patisserie & Cake Exhibition
+  </p>
 
----
+  <p align="center">
+    <a href="#-the-experience"><b>Experience</b></a> &nbsp;•&nbsp;
+    <a href="#-design-system"><b>Design System</b></a> &nbsp;•&nbsp;
+    <a href="#-technology-stack"><b>Tech Stack</b></a> &nbsp;•&nbsp;
+    <a href="#-getting-started"><b>Getting Started</b></a>
+  </p>
 
-## 🎂 Concept & Experience Highlights
+  <p align="center">
+    <img src="https://img.shields.io/badge/Next.js-111111?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+    <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React 19" />
+    <img src="https://img.shields.io/badge/Tailwind_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/GSAP_Animation-88CE02?style=for-the-badge&logo=greensock&logoColor=white" alt="GSAP" />
+  </p>
 
-1. **Scroll-Driven Horizontal Conveyor Hero**
-   - Built with **GSAP ScrollTrigger**, pinning the hero while vertical scrolling advances an architectural brass-and-wood patisserie belt horizontally.
-   - 8 distinct artisanal cake creations displayed on glazed porcelain pedestals with realistic 3D radial cast shadows and parallax botanical foliage.
-   - Hover and tap elevation with instant flavor previews.
+</div>
 
-2. **Accessible Product Detail Modal**
-   - Click any cake on the conveyor or collection grid to trigger a full sensory breakdown: flavor notes, sommelier pairing suggestions, dimension specifications, and verified sample ingredients.
-   - Built with `motion/react` with full keyboard trap, ESC dismissal, and `role="dialog"` compliance.
+<br/>
 
-3. **Curated Seasonal Collection with Category Filters**
-   - Asymmetric editorial dessert grid breaking conventional templates.
-   - Reactive category filtering: *All Creations*, *Signature Reserve*, *Dark Chocolate*, *Tropical & Fruity*, and *Velvet Cream*.
-
-4. **Tropical Terroir & Flavor Stories**
-   - Sensory ingredient pairings: *Wild Strawberry & Tahitian Vanilla*, *Alphonso Mango & Wild Passion Fruit*, *Sicilian Bronte Pistachio & Mascarpone*, and *72% Dark Cacao & Morello Cherry*.
-
-5. **The Art of Making (6-Stage Craftsmanship)**
-   - Interactive narrative sequence detailing the 6 stages of creation:
-     1. Selecting Ingredients
-     2. Preparing the Batter
-     3. Slow Steam Baking
-     4. Layering & Filling
-     5. Sculpting & Decorating
-     6. Presenting the Finished Cake
-
-6. **Dramatic Signature Cake Spotlight**
-   - Brooding, romantic focal feature around *The Midnight Chocolate* gateau set against deep cacao backdrops with interactive ingredient callouts.
-
-7. **Brand Manifesto Typographic Interlude**
-   - High-contrast editorial typography celebrating mindful celebration:
-     > *"For the first bite. For the last crumb. For the moments that deserve something extraordinary."*
-
-8. **Interactive "Build Your Dessert Box"**
-   - Curate a bespoke 4-piece or 6-piece tasting flight.
-   - Visual dessert tray slots with remove/clear interactions.
-   - Real-time **Tasting Balance Meter** measuring Rich Cacao, Tropical & Fruit, and Velvet Cream proportions.
-   - Reservation staging confirmation.
-
-9. **Atelier Visual Journal & Lightbox Gallery**
-   - Curated photography capturing morning prep, cake cuts, ingredient textures, and café atmosphere with an accessible image lightbox viewer.
-
-10. **Visit Us & Salon Tasting Reservation**
-    - Parisian salon information (29 Rue de Trévise, 75009 Paris), transport directions, and opening hours.
-    - Validated interactive tasting reservation form with instant feedback.
+> 🍰 **A Little Slice of Extraordinary:** HOUSE OF CAKES is an award-winning digital experience crafted for a luxury cake atelier. It masterfully blends vibrant tropical café energy (passion fruit, wild berries, mango) with haute French patisserie discipline. The digital centerpiece is a highly interactive, Japanese-inspired sushi-conveyor-style cake exhibition driven entirely by vertical scrolling.
 
 ---
 
-## 🎨 Color Palette & Design System
+## ✨ The Experience
 
-- **Deep Cherry**: `#8F1235`
-- **Raspberry Pink**: `#F13D70`
-- **Butter Yellow**: `#FFD968`
-- **Warm Cream**: `#FFF4E5`
-- **Chocolate Brown**: `#351C20`
-- **Strawberry Pink**: `#FFA5BC`
-- **Tropical Orange**: `#FF7448`
-- **Leaf Green**: `#456B4A`
+We broke the conventional e-commerce grid to build an editorial, sensory journey. 
 
-### Typography
-- **Editorial Headlines**: `Cormorant Garamond` (high-contrast, italic flourishes, loaded via `next/font/google`)
-- **Interface & Body**: `DM Sans` (geometric, highly legible modern sans-serif)
+<table align="center" width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🔄 Scroll-Driven Conveyor Hero</h3>
+      <p>Powered by <b>GSAP ScrollTrigger</b>. The hero pins in place while vertical scrolling advances an architectural brass-and-wood patisserie belt horizontally. Showcases 8 artisanal cakes with 3D radial cast shadows and parallax foliage.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🔍 Sensory Detail Modal</h3>
+      <p>An accessible, <code>motion/react</code>-powered dialog. Click any creation to uncover flavor notes, sommelier pairing suggestions, dimension specs, and verified ingredients. Features full keyboard trap and ESC dismissal.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🧑‍🍳 The Art of Making</h3>
+      <p>An interactive 6-stage craftsmanship narrative:<br/><i>Ingredients ➝ Batter ➝ Steam Baking ➝ Layering ➝ Sculpting ➝ Presentation.</i></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🍱 Build Your Dessert Box</h3>
+      <p>Curate a bespoke 4 or 6-piece tasting flight. Features visual drag-and-drop slots and a real-time <b>Tasting Balance Meter</b> (Rich Cacao, Tropical & Fruit, Velvet Cream).</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🖤 The Midnight Spotlight</h3>
+      <p>A brooding, romantic focal feature highlighting <i>The Midnight Chocolate</i> gateau against deep cacao backdrops with interactive ingredient callouts.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🌿 Tropical Terroir</h3>
+      <p>Sensory storytelling featuring pairings like <i>Wild Strawberry & Tahitian Vanilla</i> and <i>Sicilian Bronte Pistachio & Mascarpone</i>.</p>
+    </td>
+  </tr>
+</table>
+
+---
+
+## 🎨 Design System
+
+Our aesthetic is rooted in the natural vibrancy of our ingredients, contrasted against dark, luxurious chocolate tones.
+
+### ✦ Atelier Color Palette
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><img src="https://placehold.co/60x60/8F1235/8F1235.png" style="border-radius:50%;"><br/><b>Deep Cherry</b><br/><code>#8F1235</code></td>
+      <td align="center"><img src="https://placehold.co/60x60/F13D70/F13D70.png" style="border-radius:50%;"><br/><b>Raspberry Pink</b><br/><code>#F13D70</code></td>
+      <td align="center"><img src="https://placehold.co/60x60/FFA5BC/FFA5BC.png" style="border-radius:50%;"><br/><b>Strawberry</b><br/><code>#FFA5BC</code></td>
+      <td align="center"><img src="https://placehold.co/60x60/FF7448/FF7448.png" style="border-radius:50%;"><br/><b>Tropical Orange</b><br/><code>#FF7448</code></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://placehold.co/60x60/FFD968/FFD968.png" style="border-radius:50%;"><br/><b>Butter Yellow</b><br/><code>#FFD968</code></td>
+      <td align="center"><img src="https://placehold.co/60x60/FFF4E5/FFF4E5.png" style="border-radius:50%;"><br/><b>Warm Cream</b><br/><code>#FFF4E5</code></td>
+      <td align="center"><img src="https://placehold.co/60x60/456B4A/456B4A.png" style="border-radius:50%;"><br/><b>Leaf Green</b><br/><code>#456B4A</code></td>
+      <td align="center"><img src="https://placehold.co/60x60/351C20/351C20.png" style="border-radius:50%;"><br/><b>Chocolate</b><br/><code>#351C20</code></td>
+    </tr>
+  </table>
+</div>
+
+### ✦ Typography
+* **Editorial Headlines:** `Cormorant Garamond` *(High-contrast, italic flourishes)*
+* **Interface & Body:** `DM Sans` *(Geometric, highly legible modern sans-serif)*
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **Framework**: [Next.js](https://nextjs.org/) (App Router, Turbopack)
-- **Library**: React 19 & TypeScript
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Animation System**:
-  - [GSAP](https://greensock.com/gsap/) with `ScrollTrigger` for scrubbed conveyor synchronization and multi-plane parallax.
-  - [Motion](https://motion.dev/) (`motion/react`) for spring dialogs, filter transitions, and interactive controls.
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Accessibility & State**: `useSyncExternalStore` for reduced motion preferences (`prefers-reduced-motion`) and viewport detection.
+| Architecture | Technologies Used |
+| :--- | :--- |
+| **Core Framework** | [Next.js (App Router)](https://nextjs.org/) • React 19 • TypeScript |
+| **Styling Engine** | [Tailwind CSS v4](https://tailwindcss.com/) |
+| **Animation Choreography**| [GSAP](https://greensock.com/) `ScrollTrigger` • [Motion/React](https://motion.dev/) |
+| **UI & Accessibility** | [Lucide React](https://lucide.dev/) • `useSyncExternalStore` *(reduced-motion SSR)* |
 
 ---
 
 ## 🚀 Getting Started
 
-### 1. Install Dependencies
-```bash
-npm install
-```
+Welcome to the kitchen. Here is how you can spin up the atelier environment locally.
 
-### 2. Run the Development Server
 ```bash
+# 1. Clone the repository & install packages
+npm install
+
+# 2. Start the development server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to experience the site.
+> **Note:** Open [http://localhost:3000](http://localhost:3000) in your browser to experience the horizontal scroll features.
 
-### 3. Build for Production
 ```bash
-npm run build
-npm run start
-```
-
-### 4. Code Quality Validation
-```bash
+# 3. Code Quality & Production Build
 npm run lint
+npm run build && npm run start
 ```
 
 ---
 
 ## 🏛️ Project Architecture
 
-```
+```text
 src/
-├── animations/
-│   └── gsap.ts               # GSAP & ScrollTrigger SSR-safe registration
-├── app/
-│   ├── globals.css           # Design tokens, custom scrollbars, and styling
-│   ├── layout.tsx            # Root layout with Cormorant Garamond & DM Sans
-│   └── page.tsx              # Homepage composition and interactive state
+├── animations/         ✦ GSAP & ScrollTrigger SSR-safe registration
+├── app/                ✦ Next.js App Router (layout, page, globals.css)
 ├── components/
-│   ├── BoxBuilder.tsx        # Interactive dessert box tasting flight curator
-│   ├── BrandIntroduction.tsx # Asymmetric editorial philosophy & pillars
-│   ├── BrandManifesto.tsx    # Typographic manifesto interlude
-│   ├── CakeSpotlight.tsx     # Dramatic feature on The Midnight Chocolate
-│   ├── ConveyorHero.tsx      # Scroll-controlled horizontal conveyor hero
-│   ├── Footer.tsx            # Distinctive wordmark, salon details & navigation
-│   ├── Gallery.tsx           # Photo journal grid with lightbox modal
-│   ├── IngredientStory.tsx   # Botanical terroir & flavor pairings
-│   ├── MakingOf.tsx          # 6-stage craftsmanship interactive story
-│   ├── MobileMenu.tsx        # Slide-over responsive navigation drawer
-│   ├── Navigation.tsx        # Dynamic blur header with cart badge
-│   ├── ProductModal.tsx      # Accessible dialog with tasting & sourcing notes
-│   └── SignatureCollection.tsx # Filterable seasonal cake exhibition
-├── data/
-│   ├── content.ts            # Flavor stories, craft stages, gallery, salon info
-│   ├── navigation.ts         # Navigation items and section anchors
-│   └── products.ts           # 8 artisan cake creations database
-├── hooks/
-│   ├── useMediaQuery.ts      # SSR-safe reactive media queries
-│   └── useReducedMotion.ts   # Accessibility reduced-motion detection
-└── types/
-    └── product.ts            # TypeScript interfaces
+│   ├── BoxBuilder.tsx  ✦ Interactive dessert box tasting flight curator
+│   ├── ConveyorHero.tsx✦ Scroll-controlled horizontal conveyor hero
+│   ├── ProductModal.tsx✦ Accessible dialog with tasting notes
+│   └── ...             
+├── data/               ✦ Product DB, flavor stories, salon info
+├── hooks/              ✦ SSR-safe reactive media queries & reduced-motion
+└── types/              ✦ TypeScript interfaces & type definitions
 ```
 
 ---
 
-## 📜 License & Acknowledgments
+<br/>
+<div align="center">
+  <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" width="150" height="150" style="border-radius: 50%; border: 4px solid #FFF4E5; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 20px; object-fit: cover;">
+  
+  <p><i>"For the first bite. For the last crumb.<br/>For the moments that deserve something extraordinary."</i></p>
+  
+  <p>Crafted for the <b>House of Cakes</b> 
 
-Crafted for the House of Cakes atelier exploration.
-Inspired by tropical brunch atelier atmospheres and Parisian haute patisserie craft.
