@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+:root {
+  /* Bon Bouquet Parisian Cafe Jolly Palette */
+  --color-pink-bg: #FAD5DF;
+  --color-pink-soft: #FDE8EF;
+  --color-pink-bubble: #FFCADE;
+  --color-pink-hot: #F13D70;
+  --color-pink-deep: #D91A5B;
+
+  --color-green-emerald: #00966C;
+  --color-green-dark: #004F3C;
+  --color-green-forest: #14382B;
+  --color-mint-light: #7DD7BE;
+  --color-mint-sky: #BDFBFF;
+
+  --color-cream-canvas: #FFFDF7;
+  --color-cream-warm: #FFF6EA;
+  --color-yellow-sunny: #FFD84D;
+  --color-yellow-mango: #FFA726;
+
+  --color-text-primary: #1C2421;
+  --color-text-secondary: #4A5B53;
+  --color-text-muted: #7E9287;
+
+  --font-display: var(--font-display), "Fraunces", Georgia, serif;
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-outfit), "Outfit", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--color-cream-canvas);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  selection-background-color: #FFCADE;
+  selection-color: #004F3C;
+}
+
+::selection {
+  background: #FFCADE;
+  color: #004F3C;
+}
+
+/* Custom Friendly Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FDE8EF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00966C;
+  border-radius: 9999px;
+  border: 2px solid #FDE8EF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #004F3C;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px dashed #00966C;
+  outline-offset: 4px;
+}
+
+/* Typography Utility Classes */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Bon Bouquet Hollow / Outline Typography Styles */
+.text-outline-green {
+  -webkit-text-stroke: 1.5px #00966C;
+  color: transparent;
+}
+
+.text-outline-darkgreen {
+  -webkit-text-stroke: 1.8px #004F3C;
+  color: transparent;
+}
+
+.text-outline-white {
+  -webkit-text-stroke: 1.8px #FFFFFF;
+  color: transparent;
+}
+
+.text-outline-pink {
+  -webkit-text-stroke: 1.8px #F13D70;
+  color: transparent;
+}
+
+/* Front-and-back floating sway animation */
+@keyframes sway-back-and-forth {
+  0% {
+    transform: translateX(-35px);
+  }
+  100% {
+    transform: translateX(35px);
+  }
+}
+
+.animate-sway-slow {
+  animation: sway-back-and-forth 7s ease-in-out infinite alternate;
+}
+
+.animate-sway-reverse {
+  animation: sway-back-and-forth 6.5s ease-in-out infinite alternate-reverse;
+}
+
+/* Circular Badge continuous spin */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-slower {
+  animation: spin-slow 35s linear infinite;
+}
+
+/* Floating Hibiscus flower gentle bobbing */
+@keyframes float-hibiscus {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) rotate(4deg) scale(1.03);
+  }
+}
+
+.animate-float-flower {
+  animation: float-hibiscus 4.5s ease-in-out infinite;
+}
+
+/* Scalloped Star Shape Card CSS helper */
+.scallop-shadow {
+  filter: drop-shadow(0 12px 24px rgba(0, 79, 60, 0.12));
+}
+
+.scallop-shadow-lg {
+  filter: drop-shadow(0 18px 36px rgba(0, 79, 60, 0.16));
+}
+
+/* Organic Paper Grain Texture Overlay */
+.jolly-grain {
+  background-image: radial-gradient(rgba(0, 79, 60, 0.03) 1px, transparent 0);
+  background-size: 20px 20px;
+}
