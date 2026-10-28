@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { Sparkles, Heart, Coffee, Sun, Smile } from "lucide-react";
+import { Sun } from "lucide-react";
 
 export function JollyBrunchSection() {
   return (

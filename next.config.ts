@@ -8,6 +8,9 @@ const repo = process.env.GITHUB_REPOSITORY
 const nextConfig: NextConfig = {
   output: isExport ? "export" : undefined,
   basePath: isExport && repo ? repo : undefined,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isExport && repo ? repo : "",
+  },
   images: {
     unoptimized: isExport,
     remotePatterns: [

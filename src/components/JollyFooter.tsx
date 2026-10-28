@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import confetti from "canvas-confetti";
-import { Heart, Send, Sparkles } from "lucide-react";
+import { Heart, Send } from "lucide-react";
 
 export function JollyFooter() {
   const [email, setEmail] = useState("");

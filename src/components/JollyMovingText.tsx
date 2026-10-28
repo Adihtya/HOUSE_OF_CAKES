@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { gsap, ScrollTrigger } from "@/animations/gsap";
+import { gsap } from "@/animations/gsap";
 
 export function JollyMovingText() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -18,73 +18,73 @@ export function JollyMovingText() {
     if (prefersReducedMotion) return;
 
     const ctx = gsap.context(() => {
-      // Row 1: moves left to right with scroll
+      // Row 1: moves left to right with scroll (fast & responsive)
       if (row1Ref.current) {
         gsap.fromTo(
           row1Ref.current,
-          { xPercent: -15 },
+          { xPercent: -25 },
           {
-            xPercent: 12,
+            xPercent: 5,
             ease: "none",
             scrollTrigger: {
               trigger: sectionRef.current,
               start: "top bottom",
               end: "bottom top",
-              scrub: 1.2,
+              scrub: 0.5,
             },
           }
         );
       }
 
-      // Row 2: moves right to left with scroll
+      // Row 2: moves right to left with scroll (fast & responsive)
       if (row2Ref.current) {
         gsap.fromTo(
           row2Ref.current,
-          { xPercent: 10 },
+          { xPercent: 5 },
           {
-            xPercent: -18,
+            xPercent: -25,
             ease: "none",
             scrollTrigger: {
               trigger: sectionRef.current,
               start: "top bottom",
               end: "bottom top",
-              scrub: 1.2,
+              scrub: 0.5,
             },
           }
         );
       }
 
-      // Row 3: moves left to right with scroll
+      // Row 3: moves left to right with scroll (fast & responsive)
       if (row3Ref.current) {
         gsap.fromTo(
           row3Ref.current,
-          { xPercent: -18 },
+          { xPercent: -30 },
           {
-            xPercent: 15,
+            xPercent: 8,
             ease: "none",
             scrollTrigger: {
               trigger: sectionRef.current,
               start: "top bottom",
               end: "bottom top",
-              scrub: 1.4,
+              scrub: 0.5,
             },
           }
         );
       }
 
-      // Row 4: moves right to left with scroll
+      // Row 4: moves right to left with scroll (fast & responsive)
       if (row4Ref.current) {
         gsap.fromTo(
           row4Ref.current,
-          { xPercent: 12 },
+          { xPercent: 8 },
           {
-            xPercent: -15,
+            xPercent: -30,
             ease: "none",
             scrollTrigger: {
               trigger: sectionRef.current,
               start: "top bottom",
               end: "bottom top",
-              scrub: 1.4,
+              scrub: 0.5,
             },
           }
         );
@@ -180,13 +180,28 @@ export function JollyMovingText() {
         </div>
       </div>
 
-      {/* 4 ROWS OF ANIMATED MOVING FRONT-AND-BACK TYPOGRAPHY */}
+      {/* 4 ROWS OF SCROLL-DRIVEN KINETIC TYPOGRAPHY */}
       <div className="relative z-10 flex flex-col gap-3 sm:gap-6 w-full overflow-hidden">
-        {/* ROW 1: pancake • acai bowl • fluffy waffle */}
+        {/* ROW 1: moves left to right with scroll */}
         <div
           ref={row1Ref}
-          className="whitespace-nowrap flex items-center gap-8 sm:gap-14 animate-sway-slow will-change-transform"
+          className="whitespace-nowrap flex items-center gap-8 sm:gap-14 will-change-transform -ml-24 sm:-ml-48"
         >
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-white tracking-tight uppercase hover:text-white transition-colors duration-300">
+            pancake
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-[#004F3C] tracking-tight uppercase">
+            acai bowl
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-green tracking-tight uppercase">
+            tiramisu
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-[#EC1C72] tracking-tight uppercase">
+            fluffy waffle
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-white tracking-tight uppercase">
+            strawberry cloud
+          </span>
           <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-white tracking-tight uppercase hover:text-white transition-colors duration-300">
             pancake
           </span>
@@ -204,11 +219,26 @@ export function JollyMovingText() {
           </span>
         </div>
 
-        {/* ROW 2: matcha • bubble tea • croissant */}
+        {/* ROW 2: moves right to left with scroll */}
         <div
           ref={row2Ref}
-          className="whitespace-nowrap flex items-center gap-8 sm:gap-14 animate-sway-reverse will-change-transform"
+          className="whitespace-nowrap flex items-center gap-8 sm:gap-14 will-change-transform -ml-24 sm:-ml-48"
         >
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-green tracking-tight uppercase hover:text-[#00966C] transition-colors duration-300">
+            matcha
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white drop-shadow-md tracking-tight uppercase">
+            bubble tea
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-white tracking-tight uppercase">
+            brioche french toast
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-[#004F3C] tracking-tight uppercase">
+            choux au craquelin
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-pink tracking-tight uppercase">
+            mango tart
+          </span>
           <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-green tracking-tight uppercase hover:text-[#00966C] transition-colors duration-300">
             matcha
           </span>
@@ -226,11 +256,26 @@ export function JollyMovingText() {
           </span>
         </div>
 
-        {/* ROW 3: poke • avocado toast • souffle pancake */}
+        {/* ROW 3: moves left to right with scroll */}
         <div
           ref={row3Ref}
-          className="whitespace-nowrap flex items-center gap-8 sm:gap-14 animate-sway-slow will-change-transform"
+          className="whitespace-nowrap flex items-center gap-8 sm:gap-14 will-change-transform -ml-24 sm:-ml-48"
         >
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight uppercase hover:text-[#004F3C] transition-colors duration-300">
+            poke
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-green tracking-tight uppercase">
+            avocado toast
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-[#EC1C72] tracking-tight uppercase">
+            souffle pancake
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-white tracking-tight uppercase">
+            pistachio silk
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-[#004F3C] tracking-tight uppercase">
+            passion fruit
+          </span>
           <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight uppercase hover:text-[#004F3C] transition-colors duration-300">
             poke
           </span>
@@ -248,11 +293,26 @@ export function JollyMovingText() {
           </span>
         </div>
 
-        {/* ROW 4: chicken bao • satay waffle • dragonfruit */}
+        {/* ROW 4: moves right to left with scroll */}
         <div
           ref={row4Ref}
-          className="whitespace-nowrap flex items-center gap-8 sm:gap-14 animate-sway-reverse will-change-transform"
+          className="whitespace-nowrap flex items-center gap-8 sm:gap-14 will-change-transform -ml-24 sm:-ml-48"
         >
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-green tracking-tight uppercase">
+            chicken bao
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight uppercase">
+            satay waffle
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-[#004F3C] tracking-tight uppercase">
+            dragonfruit latte
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-pink tracking-tight uppercase">
+            valrhona noir
+          </span>
+          <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-tight uppercase">
+            yuzu blossom
+          </span>
           <span className="font-display text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-outline-green tracking-tight uppercase">
             chicken bao
           </span>

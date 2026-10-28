@@ -2,9 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Sparkles, Plus, Check, Heart, Eye } from "lucide-react";
+import { Plus, Check } from "lucide-react";
 import { CakeProduct } from "@/types/product";
-import { gsap, ScrollTrigger } from "@/animations/gsap";
+import { gsap } from "@/animations/gsap";
 
 interface MenuItem {
   id: string;
@@ -297,7 +297,7 @@ export function JollyStarMenu({
 
         {/* 12 SCALLOPED STAR SHAPE DISHES GRID (DIRECT FROM IMAGE 2!) */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-12">
-          {filteredItems.map((item, idx) => {
+          {filteredItems.map((item) => {
             const isCw = item.rotationDirection === 1;
             const isHovered = hoveredItemId === item.id;
             const isAdded = tastingBoxIds.includes(item.id);

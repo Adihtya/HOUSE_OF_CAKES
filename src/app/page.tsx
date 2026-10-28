@@ -7,6 +7,8 @@ import { SmoothScroll } from "@/components/SmoothScroll";
 import { JollyCursor } from "@/components/JollyCursor";
 import { JollyBadgeNav } from "@/components/JollyBadgeNav";
 import { JollyHero } from "@/components/JollyHero";
+import { CakeTrailPlayground } from "@/components/CakeTrailPlayground";
+import { Cake3DScrollExplorer } from "@/components/Cake3DScrollExplorer";
 import { JollyMovingText } from "@/components/JollyMovingText";
 import { JollyStarMenu } from "@/components/JollyStarMenu";
 import { JollyBrunchSection } from "@/components/JollyBrunchSection";
@@ -66,27 +68,32 @@ export default function HomePage() {
           onOpenTastingBox={handleScrollToTastingBox}
         />
 
-        {/* SECTION 2: Hero with Interactive Cursor Image Trail (User's Favorite Feature Kept Intact!) */}
-        <JollyHero
-          cakes={CAKE_PRODUCTS}
+        {/* SECTION 2: Clean, Editorial Hero Section without Clutter */}
+        <JollyHero onOpenTastingBox={handleScrollToTastingBox} />
+
+        {/* SECTION 3: Dedicated Patisserie Playground Canvas (Free to pop & draw cakes without text clutter) */}
+        <CakeTrailPlayground
           onSelectCake={(cake) => setSelectedCakeForModal(cake)}
-          onOpenTastingBox={handleScrollToTastingBox}
+          onAddToTastingBox={handleAddToTastingBox}
         />
 
-        {/* SECTION 3: Animated Moving Front-and-Back Typography (From Image 1) */}
+        {/* SECTION 4: Scroll-Interactive 3D Cake Anatomy & Layer Dissection Experience */}
+        <Cake3DScrollExplorer />
+
+        {/* SECTION 5: Kinetic Moving Typography Slider */}
         <JollyMovingText />
 
-        {/* SECTION 4: Rotating Star Shapes Menu Section (From Image 2) */}
+        {/* SECTION 6: Rotating Star Shapes Menu Section */}
         <JollyStarMenu
           onSelectCake={(cake) => setSelectedCakeForModal(cake)}
           onAddToTastingBox={handleAddToTastingBox}
           tastingBoxIds={tastingCakes.map((c) => c.id)}
         />
 
-        {/* SECTION 5: "Brunch & Breakfast" Bali Vibes in Paris (From Image 3) */}
+        {/* SECTION 7: "Brunch & Breakfast" Bali Vibes in Paris */}
         <JollyBrunchSection />
 
-        {/* SECTION 6: Curate Your Sweet Tasting Flight Box with Confetti Celebration */}
+        {/* SECTION 8: Curate Your Sweet Tasting Flight Box with Confetti Celebration */}
         <JollyTastingFlight
           cakes={CAKE_PRODUCTS}
           selectedCakes={tastingCakes}
@@ -95,13 +102,13 @@ export default function HomePage() {
           onClearBox={handleClearTastingBox}
         />
 
-        {/* SECTION 7: Come Say Bonjour! Parisian Cafe Terraces & Salons */}
+        {/* SECTION 9: Parisian Cafe Terraces & Salons */}
         <JollySalons />
 
-        {/* SECTION 8: Custom Celebration Cake Commissions */}
+        {/* SECTION 10: Custom Celebration Cake Commissions */}
         <JollyCelebrationInquiry />
 
-        {/* SECTION 9: Monumental Wordmark Footer & Rotating Stamp */}
+        {/* SECTION 11: Monumental Wordmark Footer & Rotating Stamp */}
         <JollyFooter />
 
         {/* Item Specification Modal */}

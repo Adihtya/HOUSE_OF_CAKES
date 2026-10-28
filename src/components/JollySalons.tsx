@@ -67,7 +67,7 @@ export function JollySalons() {
 
         {/* 3 Salon Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10">
-          {salons.map((salon, i) => (
+          {salons.map((salon) => (
             <div
               key={salon.city}
               className="group bg-white rounded-3xl overflow-hidden shadow-xl border-4 border-white hover:border-[#00966C] transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between"

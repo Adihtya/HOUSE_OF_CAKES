@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { Sparkles, Utensils, Coffee, Heart, ShoppingBag, Menu as MenuIcon, X } from "lucide-react";
+import { Menu as MenuIcon, X, Box } from "lucide-react";
 
 interface JollyBadgeNavProps {
   tastingBoxCount?: number;
@@ -27,9 +27,9 @@ export function JollyBadgeNav({
 
   const navBadges = [
     {
-      id: "concept",
-      label: "CONCEPT",
-      href: "#concept",
+      id: "playground",
+      label: "CANVAS",
+      href: "#playground",
       bgColor: "#F78DA7",
       hoverColor: "#F13D70",
       textColor: "#FFFFFF",
@@ -37,6 +37,17 @@ export function JollyBadgeNav({
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="w-5 h-5 text-white">
           <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93" strokeLinecap="round" />
         </svg>
+      ),
+    },
+    {
+      id: "3d-cake",
+      label: "3D CAKE",
+      href: "#3d-cake",
+      bgColor: "#FFD968",
+      hoverColor: "#FFA726",
+      textColor: "#004F3C",
+      icon: (
+        <Box className="w-5 h-5 text-[#004F3C]" />
       ),
     },
     {
@@ -140,7 +151,7 @@ export function JollyBadgeNav({
 
           {/* RIGHT: Round Pastel Circular Badge Buttons (Bon Bouquet Navigation Badges) */}
           <nav
-            className="hidden md:flex items-center gap-2.5 sm:gap-3.5"
+            className="hidden md:flex items-center gap-2 sm:gap-3"
             aria-label="Jolly Circular Navigation"
           >
             {navBadges.map((badge) => {
@@ -148,17 +159,17 @@ export function JollyBadgeNav({
 
               const content = (
                 <div
-                  className="relative group w-14 h-14 sm:w-[68px] sm:h-[68px] rounded-full border-[3px] border-white shadow-md flex flex-col items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-xl active:scale-95 cursor-pointer select-none"
+                  className="relative group w-13 h-13 sm:w-16 sm:h-16 rounded-full border-[3px] border-white shadow-md flex flex-col items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-xl active:scale-95 cursor-pointer select-none"
                   style={{ backgroundColor: badge.bgColor }}
                 >
                   {/* Icon */}
-                  <div className="group-hover:-translate-y-1 transition-transform duration-200">
+                  <div className="group-hover:-translate-y-0.5 transition-transform duration-200">
                     {badge.icon}
                   </div>
 
                   {/* Label along bottom curve */}
                   <span
-                    className="text-[8px] sm:text-[9.5px] font-extrabold tracking-wider uppercase mt-0.5"
+                    className="text-[8px] sm:text-[9px] font-extrabold tracking-wider uppercase mt-0.5"
                     style={{ color: badge.textColor }}
                   >
                     {badge.label}
@@ -177,6 +188,7 @@ export function JollyBadgeNav({
                 return (
                   <button
                     key={badge.id}
+                    type="button"
                     onClick={onOpenTastingBox}
                     className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00966C] rounded-full"
                     aria-label={`Open Tasting Flight with ${tastingBoxCount} confections selected`}
@@ -202,6 +214,7 @@ export function JollyBadgeNav({
           <div className="flex items-center gap-2 md:hidden">
             {tastingBoxCount > 0 && (
               <button
+                type="button"
                 onClick={onOpenTastingBox}
                 className="w-10 h-10 rounded-full bg-[#7DD7BE] border-2 border-white flex items-center justify-center text-[#004F3C] font-bold text-xs shadow-md"
               >
@@ -209,6 +222,7 @@ export function JollyBadgeNav({
               </button>
             )}
             <button
+              type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="w-12 h-12 rounded-full bg-[#00966C] text-white border-2 border-white shadow-md flex items-center justify-center active:scale-90 transition-transform"
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
@@ -235,6 +249,7 @@ export function JollyBadgeNav({
                 🌸 House Of Cakes Maison
               </span>
               <button
+                type="button"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-10 h-10 rounded-full bg-white text-[#004F3C] flex items-center justify-center shadow-sm"
               >
@@ -247,6 +262,7 @@ export function JollyBadgeNav({
               {navBadges.map((item) => (
                 <button
                   key={item.id}
+                  type="button"
                   onClick={() => {
                     setMobileMenuOpen(false);
                     if (item.action === "tasting") {

@@ -102,23 +102,6 @@ body {
   color: transparent;
 }
 
-/* Front-and-back floating sway animation */
-@keyframes sway-back-and-forth {
-  0% {
-    transform: translateX(-35px);
-  }
-  100% {
-    transform: translateX(35px);
-  }
-}
-
-.animate-sway-slow {
-  animation: sway-back-and-forth 7s ease-in-out infinite alternate;
-}
-
-.animate-sway-reverse {
-  animation: sway-back-and-forth 6.5s ease-in-out infinite alternate-reverse;
-}
 
 /* Circular Badge continuous spin */
 @keyframes spin-slow {

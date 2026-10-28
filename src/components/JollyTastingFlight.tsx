@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import confetti from "canvas-confetti";
-import { Sparkles, Trash2, ShoppingBag, Plus, X, CheckCircle2 } from "lucide-react";
+import { Sparkles, Trash2, ShoppingBag, X, CheckCircle2 } from "lucide-react";
 import { CakeProduct } from "@/types/product";
 
 interface JollyTastingFlightProps {

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import confetti from "canvas-confetti";
-import { Sparkles, Heart, Send, CheckCircle2 } from "lucide-react";
+import { Sparkles, Send, CheckCircle2 } from "lucide-react";
 
 export function JollyCelebrationInquiry() {
   const [flavor, setFlavor] = useState("Strawberry Chantilly");

@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
-import { X, Check, Sparkles, Heart } from "lucide-react";
+import { X, Check, Sparkles } from "lucide-react";
 import { CakeProduct } from "@/types/product";
 
 interface ProductModalProps {
